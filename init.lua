@@ -15,4 +15,4 @@ require "user.lualine"
 require "user.toggleterm"
 require "user.impatient"
 require "user.alpha"
-
+require "user.autocommands"
