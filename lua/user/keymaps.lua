@@ -25,9 +25,14 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Neovim Tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Delete buffer
 keymap("n", "<leader>x", ":Bdelete<cr>", opts)
+
+-- Compile C & C++
+keymap("n", "<leader>.", ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>endif<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
@@ -69,5 +74,3 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- Compile C & C++
-keymap("n", "<leader>.", ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>endif<CR>", opts)
