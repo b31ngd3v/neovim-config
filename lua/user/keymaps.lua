@@ -37,8 +37,8 @@ keymap("n", "<leader>.",
     , opts)
 
 -- Telescope
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<C-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>f", "<cmd>Telescope find_files previewer=false hidden=true<cr>", opts)
+keymap("n", "<C-t>", "<cmd>Telescope live_grep previewer=false<cr>", opts)
 
 -- Gitsigns
 keymap("n", "<leader>c", "<cmd>Gitsigns blame_line<cr>", opts)

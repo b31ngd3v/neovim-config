@@ -14,6 +14,7 @@ Open `nvim` and enter the following:
 - neovim
 - hack nerd font
 - ripgrep
+- fd
 - prettier
 - black
 - isort
