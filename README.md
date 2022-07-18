@@ -1,4 +1,5 @@
 # neovim-config
+
 Your senpai's neovim config
 
 ## Get healthy
@@ -98,7 +99,7 @@ npm i -g neovim
 | <kbd>d</kbd>                               | delete file (neovim tree)                   |
 | <kbd>v</kbd>                               | vertical split (neovim tree)                |
 | <kbd>ctrl</kbd> + <kbd> \ </kbd>           | toggle terminal                             |
-| <kbd>:lua _NODE_TOGGLE()</kbd>             | node shell                                  |
-| <kbd>:lua _BTOP_TOGGLE()</kbd>             | btop                                        |
-| <kbd>:lua _PYTHON_TOGGLE()</kbd>           | python shell                                |
-| <kbd>leader</kbd> + <kbd>.</kbd>           | compile and run python/c/c++ code           |
+| <kbd>:lua \_NODE_TOGGLE()</kbd>            | node shell                                  |
+| <kbd>:lua \_BTOP_TOGGLE()</kbd>            | btop                                        |
+| <kbd>:lua \_PYTHON_TOGGLE()</kbd>          | python shell                                |
+| <kbd>leader</kbd> + <kbd>.</kbd>           | compile and run python/node/c/c++ code      |
