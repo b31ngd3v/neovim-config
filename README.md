@@ -42,6 +42,8 @@ npm i -g neovim
 | <kbd>ctrl</kbd> + <kbd>j</kbd>             | move between windows (down)                 |
 | <kbd>ctrl</kbd> + <kbd>k</kbd>             | move between windows (up)                   |
 | <kbd>ctrl</kbd> + <kbd>l</kbd>             | move between windows (right)                |
+| <kbd>shift</kbd> + <kbd>s</kbd>            | replace command                             |
+| <kbd>leader</kbd> + <kbd>s</kbd>           | no highlight                                |
 | <kbd>leader</kbd> + <kbd>e</kbd>           | neovim tree                                 |
 | <kbd>ctrl</kbd> + <kbd>up</kbd>            | resize window                               |
 | <kbd>ctrl</kbd> + <kbd>down</kbd>          | resize window                               |
