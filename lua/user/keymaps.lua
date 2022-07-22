@@ -1,5 +1,6 @@
 local opts = { noremap = true, silent = true }
 
+local noremap_opt = { noremap = true }
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -26,7 +27,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Custom bindings
-keymap("n", "S", ":%s//g<Left><Left>", opts)
+keymap("n", "S", ":%s//g<Left><Left>", noremap_opt)
 keymap("n", "<leader>s", ":noh<cr>", opts)
 
 -- Neovim tree
