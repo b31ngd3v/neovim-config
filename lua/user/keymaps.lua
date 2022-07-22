@@ -25,6 +25,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Custom bindings
+keymap("n", "S", ":%s//g<Left><Left>", opts)
+keymap("n", "<leader>s", ":noh<cr>", opts)
+
 -- Neovim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
@@ -33,8 +37,8 @@ keymap("n", "<leader>x", ":Bdelete<cr>", opts)
 
 -- Compile and Run Python, Node, C & C++ code
 keymap("n", "<leader>.",
-    ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>:elseif &filetype ==# 'python'<CR>:TermExec cmd=\"python %\"<CR>:elseif &filetype ==# 'javascript'<CR>:TermExec cmd=\"npm start\"<CR>endif<CR>"
-    , opts)
+  ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>:elseif &filetype ==# 'python'<CR>:TermExec cmd=\"python %\"<CR>:elseif &filetype ==# 'javascript'<CR>:TermExec cmd=\"npm start\"<CR>endif<CR>"
+  , opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files previewer=false hidden=true<cr>", opts)
