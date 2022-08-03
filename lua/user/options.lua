@@ -12,6 +12,8 @@ local options = {
   showmode = false, -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2, -- always show tabs
   smartcase = true, -- smart case
+  shiftwidth = 2, -- the number of spaces inserted for each indentation
+  tabstop = 2, -- insert 2 spaces for a tab
   smartindent = true, -- make indenting smarter again
   splitbelow = true, -- force all horizontal splits to go below current window
   splitright = true, -- force all vertical splits to go to the right of current window
@@ -31,15 +33,6 @@ local options = {
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
 }
-
-if vim.bo.filetype == 'python'
-then
-  options.shiftwidth = 4
-  options.tabstop = 4
-else
-  options.shiftwidth = 2
-  options.tabstop = 2
-end
 
 for opt, val in pairs(options) do
   vim.opt[opt] = val
