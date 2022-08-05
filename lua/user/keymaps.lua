@@ -38,7 +38,7 @@ keymap("n", "<leader>x", ":Bdelete<cr>", opts)
 
 -- Compile and Run Python, Node, C & C++ code
 keymap("n", "<leader>.",
-  ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>:elseif &filetype ==# 'python'<CR>:TermExec cmd=\"python %\"<CR>:elseif &filetype ==# 'javascript'<CR>:TermExec cmd=\"npm start\"<CR>endif<CR>"
+  ":w<CR>:if &filetype ==# 'c' || &filetype ==# 'cpp'<CR>:TermExec cmd=\"g++ % -o main && ./main\"<CR>:elseif &filetype ==# 'python'<CR>:TermExec cmd=\"python %\"<CR>:elseif &filetype ==# 'rust'<CR>:TermExec cmd=\"cargo run\"<CR>:elseif &filetype ==# 'javascript'<CR>:TermExec cmd=\"npm start\"<CR>endif<CR>"
   , opts)
 
 -- Telescope
