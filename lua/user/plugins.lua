@@ -70,6 +70,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim" -- toggleterm
   use "lewis6991/impatient.nvim" -- decrease loading time
   use "goolord/alpha-nvim" -- dashboard
+  use "p00f/cphelper.nvim" -- competitive programming
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -104,4 +104,5 @@ npm i -g neovim
 | <kbd>:lua \_NODE_TOGGLE()</kbd>            | node shell                                  |
 | <kbd>:lua \_BTOP_TOGGLE()</kbd>            | btop                                        |
 | <kbd>:lua \_PYTHON_TOGGLE()</kbd>          | python shell                                |
-| <kbd>leader</kbd> + <kbd>.</kbd>           | compile and run python/node/c/c++ code      |
+| <kbd>leader</kbd> + <kbd>.</kbd>           | compile and run python/node/c/c++/rust code |
+| <kbd>leader</kbd> + <kbd>k</kbd>           | Cphelper - run tests                        |
