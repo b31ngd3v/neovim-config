@@ -171,7 +171,6 @@ local buttons = {
     { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
     { type = "padding", val = 1 },
     dashboard.button("e", "  New file", "<cmd>ene<CR>"),
-    dashboard.button("c", "  Competitive Programming", ":CphReceive<CR>"),
     dashboard.button("f", "  Find file", ":Telescope find_files previewer=false hidden=true<CR>"),
     dashboard.button("t", "  Live grep", ":Telescope live_grep previewer=false<CR>"),
     dashboard.button("u", "  Update plugins", "<cmd>PackerSync<CR>"),
