@@ -33,9 +33,4 @@ vim.cmd [[
     autocmd!
     autocmd BufWritePre * lua vim.lsp.buf.format()
   augroup end
-
-  augroup _tmux
-    autocmd!
-    autocmd VimEnter,VimLeave * silent !tmux set status
-  augroup end
 ]]

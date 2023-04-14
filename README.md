@@ -20,7 +20,7 @@ Open `nvim` and enter the following:
 - black
 - isort
 - flake8
-- install language servers with `:LspInstallInfo` [jsonls, rust_analyzer, sumneko_lua, pyright, clangd, cssls, tsserver, html, tailwindcss]
+- install language servers with `:LspInstallInfo` [jsonls, rust_analyzer, pyright, clangd, cssls, tsserver, html, tailwindcss]
 
 ### Neovim python support
 
