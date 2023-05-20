@@ -10,16 +10,18 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-local status_ok, api = pcall(require, "nvim-tree.api")
-if not status_ok then
-  return
-end
+local function on_attach(bufnr)
+  local status_ok, api = pcall(require, "nvim-tree.api")
+  if not status_ok then
+    return
+  end
 
-local function opts(desc)
-  return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-end
+  local function opts(desc)
+    return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+  end
 
-vim.keymap.set('n', 'l', api.node.open.edit, opts('Open'))
+  vim.keymap.set('n', 'l', api.node.open.edit, opts('Open'))
+end
 
 nvim_tree.setup {
   update_focused_file = {
@@ -68,4 +70,5 @@ nvim_tree.setup {
     width = 30,
     side = "left",
   },
+  on_attach = on_attach
 }
