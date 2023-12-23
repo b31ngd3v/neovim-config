@@ -70,13 +70,6 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim" -- toggleterm
   use "lewis6991/impatient.nvim" -- decrease loading time
   use "goolord/alpha-nvim" -- dashboard
-  use {
-    'akinsho/flutter-tools.nvim',
-    requires = {
-        'nvim-lua/plenary.nvim',
-        'stevearc/dressing.nvim', -- optional for vim.ui.select
-    },
-  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
