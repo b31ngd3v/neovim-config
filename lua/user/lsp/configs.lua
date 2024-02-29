@@ -6,7 +6,7 @@ end
 local lspconfig = require("lspconfig")
 
 local servers = { "jsonls", "pyright", "clangd", "cssls", "tsserver", "html",
-  "tailwindcss" }
+  "tailwindcss", "prismals" }
 
 lsp_installer.setup({
   ensure_installed = servers,
